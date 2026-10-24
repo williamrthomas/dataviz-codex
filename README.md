@@ -44,6 +44,10 @@ Seven famous visualizations analyzed in depth — from Minard's Napoleon march t
 ### [Curriculum](curriculum/)
 Four learning paths tailored to different backgrounds: Foundations (start here), Practitioner (working analysts), Designer (visual designers entering data viz), and Advanced (theory, research, frontier).
 
+A focused study, [Digital Analytical Instruments](curriculum/digital-practice.md), connects this foundation to cartographic design, Rams and Ive, multidimensional exploration, and motion. It distinguishes documented ideas from proposed practice and includes three experiments for evaluating the extensions.
+
+The [Visual Practice Workshop](workshop/README.md) includes a browsable reference atlas and an above-fold artifact contract for an Astro devshare. Hans Rosling and the Gapminder team are included as precedents for guided explanation and distributions behind averages.
+
 ---
 
 ## Philosophy

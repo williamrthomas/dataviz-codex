@@ -1,0 +1,364 @@
+{
+  "title": "Digital analytical instruments",
+  "thesis": "Make complex evidence explorable through clear, responsive and reversible actions, while preserving identity, context, measurement and provenance.",
+  "scope": "A proposed synthesis extending the Tufte study. Statements about what Rams or Ive would design are interpretations, not attributed opinions. Digital capabilities extend a long history of multivariate and interactive work; they were not invented recently. Sources were read on 24 October 2026.",
+  "lenses": [
+    {
+      "name": "Tufte",
+      "source": "Analytical design serves reasoning about evidence; his map examples combine precise detail and a larger field.",
+      "extension": "Keep comparisons, measurement and documentation intact as views become interactive.",
+      "sources": [
+        "S03",
+        "S12"
+      ]
+    },
+    {
+      "name": "Dieter Rams",
+      "source": "His published principles connect usefulness, comprehensibility, restraint, honesty and care in details.",
+      "extension": "Our interpretation: give each action a clear purpose and effect. Reduce competing controls while keeping active state and essential information visible.",
+      "sources": [
+        "D01"
+      ]
+    },
+    {
+      "name": "Jony Ive",
+      "source": "In the 2023 interview he stresses people, framing through writing, prototypes, and learning through repeated making. A drawing alone cannot communicate all qualities of an object.",
+      "extension": "Our interpretation: treat response, continuity, latency and feedback as part of the material of the tool. Prototype behavior and the whole investigative sequence, alongside its appearance.",
+      "sources": [
+        "D02"
+      ]
+    },
+    {
+      "name": "Cartographic practice",
+      "source": "swisstopo describes scale-dependent generalization and a defined symbol system; Imhof's relief work demonstrates crafted terrain depiction.",
+      "extension": "Use stable coordinates, hierarchy, selective labeling and useful detail at each scale. Information density becomes a property of organized relationships, rather than simply mark count.",
+      "sources": [
+        "D11",
+        "D12"
+      ]
+    },
+    {
+      "name": "Hans Rosling",
+      "source": "Gapminder publishes his explanation of two centuries of income and lifespan change, alongside income-distribution tools that make within-country variation visible.",
+      "extension": "Our interpretation: include a guided explanation mode with a specific question, deliberate pacing, selected trajectories and meaningful pauses, then allow independent exploration of the same evidence. Test understanding rather than enthusiasm alone.",
+      "sources": [
+        "D18",
+        "D19"
+      ]
+    }
+  ],
+  "mapRules": [
+    {
+      "name": "A shared field",
+      "rule": "Give observations, labels, reference structures and annotations a common registration. For nonspatial data, use a meaningful arrangement rather than invented geography."
+    },
+    {
+      "name": "Hierarchy within density",
+      "rule": "Let the primary evidence, reference structure and optional annotations have distinct visual weights. A calm field can still contain substantial detail."
+    },
+    {
+      "name": "Generalization with scale",
+      "rule": "Change representation as space changes: distributions and aggregates at overview, individual records and exact values at detail. Preserve access to the underlying observations."
+    },
+    {
+      "name": "Deliberate labels",
+      "rule": "Prioritize labels, avoid collisions and retain routes to exact lookup. An omitted label must not imply an omitted observation."
+    },
+    {
+      "name": "Semantic color",
+      "rule": "Use ordered color for ordered quantities, diverging color around a meaningful reference, and categorical color for identity. Selection must remain distinct from evaluation."
+    },
+    {
+      "name": "Orientation and measurement",
+      "rule": "Keep scope, scale, selection and the path back visible. Screen distance only has quantitative meaning when the layout defines it."
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "Coordinated multidimensional views",
+      "change": "Select entities in one view and inspect the same records across other dimensions.",
+      "method": "Stable record IDs, shared selection predicates, conditional aggregations and linked views.",
+      "condition": "Retain population and cohort counts, reference definitions and the meaning of each axis.",
+      "sources": [
+        "D06",
+        "D14"
+      ]
+    },
+    {
+      "name": "Direct manipulation of assumptions",
+      "change": "Adjust a premise and see its implications within the explanation.",
+      "method": "Explicit parameterized models with immediate recomputation and comparable saved states.",
+      "condition": "Changing a model is different from filtering observations. Expose the equation, assumptions, valid range and whether outputs are predictions.",
+      "sources": [
+        "D03"
+      ]
+    },
+    {
+      "name": "Semantic zoom",
+      "change": "Move from the shape of a population to individual observations and evidence without losing orientation.",
+      "method": "Scale-aware aggregation, level-of-detail rules, spatial or data indexing, and prioritized label placement.",
+      "condition": "Retain units and selection. Explain when an aggregate changes definition or membership.",
+      "sources": [
+        "D11",
+        "D14"
+      ]
+    },
+    {
+      "name": "Motion that preserves meaning",
+      "change": "Track identities through a reordering, regrouping or change of representation; inspect temporal movement when the task calls for it.",
+      "method": "Join marks by stable ID, stage difficult transitions, preserve useful landmarks, and provide scrub, pause and static comparison modes.",
+      "condition": "Interpolated movement is not an observed journey. Do not animate unrelated entities into one another or imply continuous measurements between sparse observations.",
+      "sources": [
+        "D15",
+        "D16"
+      ]
+    },
+    {
+      "name": "Visible sensitivity and alternatives",
+      "change": "See which conclusions persist across weights, transformations, parameters and plausible alternatives.",
+      "method": "Parameter sweeps, alternative-model comparisons, saved cohorts and small multiples of results.",
+      "condition": "A compelling result in one chosen projection or weighting is insufficient evidence of stable structure.",
+      "sources": [
+        "D03",
+        "D07",
+        "D08",
+        "D10"
+      ]
+    },
+    {
+      "name": "A recoverable investigation",
+      "change": "Retain the question, evidence, actions and interpretation so another person can continue or challenge the work.",
+      "method": "Versioned data references, declarative view state, history, bookmarks, annotations and evidence export.",
+      "condition": "A screenshot alone does not preserve a query, calculation or model. Capture sufficient state to reproduce the result.",
+      "sources": [
+        "D14",
+        "D17"
+      ]
+    }
+  ],
+  "multidimensional": [
+    {
+      "method": "Linked plots and distributions",
+      "question": "How does a selected cohort differ across several measurements?",
+      "mechanic": "Selection by ID and coordinated conditional summaries.",
+      "risk": "Filtering can change denominators and create selection effects; always show cohort and reference scope."
+    },
+    {
+      "method": "Scatterplot matrix",
+      "question": "Which pairs of quantitative variables have relationships or exceptions?",
+      "mechanic": "Repeat pairwise plots on consistent axes, with linked selection.",
+      "risk": "Pairwise views can miss interactions involving three or more variables and become unwieldy as dimensions multiply."
+    },
+    {
+      "method": "Parallel coordinates",
+      "question": "What attribute combinations characterize a group?",
+      "mechanic": "One axis per variable; a record becomes a polyline across axes; brush ranges and reorder axes.",
+      "risk": "Normalization, axis direction and order affect the apparent pattern. Lines can obscure distributions and missing data."
+    },
+    {
+      "method": "Ordered matrix or clustered heatmap",
+      "question": "Which entities share profiles, and where are the exceptions?",
+      "mechanic": "Arrange entities and measurements in a matrix; reorder or cluster using an explicit distance and linkage.",
+      "risk": "Color, scaling and ordering can dominate the impression. Clustering choices are analytical assumptions."
+    },
+    {
+      "method": "PCA projection",
+      "question": "What major linear directions summarize variation?",
+      "mechanic": "Project centered, and where appropriate scaled, variables onto directions of maximum variance; inspect loadings and explained variance.",
+      "risk": "High variance need not mean relevance to the task. Linear structure and scale choices constrain the result."
+    },
+    {
+      "method": "t-SNE or UMAP exploration",
+      "question": "Which observations appear locally similar under a chosen feature representation?",
+      "mechanic": "Construct a nonlinear low-dimensional embedding; compare parameter settings and return selected records to their original attributes.",
+      "risk": "Plot spacing, island size and separation are not automatically measurements of real groups. Inspect normalization, metric, parameters and stability."
+    }
+  ],
+  "multidimensionalNote": "Multidimensional analysis has a long history. Dynamic queries and starfield displays were already demonstrated in the early 1990s. The extension we want is fluid coordination: the same entities, several useful views, immediate feedback, explicit scope and recoverable decisions. Physical screen dimensionality and data dimensionality are different things.",
+  "multidimensionalSources": [
+    "D06",
+    "D07",
+    "D10",
+    "D14"
+  ],
+  "motion": [
+    {
+      "type": "Transition between views",
+      "purpose": "Preserve object identity when a layout, grouping or scale changes.",
+      "rule": "Keep keys and semantic correspondences stable. Use simple staging when it improves tracking. Provide a direct or reduced-motion alternative.",
+      "sources": [
+        "D15"
+      ]
+    },
+    {
+      "type": "Change in the observed world",
+      "purpose": "Inspect trajectories, flows, reversals and sequences over measured time.",
+      "rule": "Provide pause, scrubbing and time labels. Keep selected trails or side-by-side frames when readers need to compare distant moments.",
+      "sources": [
+        "D16"
+      ]
+    },
+    {
+      "type": "Change in a model or simulation",
+      "purpose": "Explore a premise, process or possible outcome.",
+      "rule": "Label modeled time and generated values. Show controls, assumptions and a way to compare alternatives; do not present simulated movement as an observation.",
+      "sources": [
+        "D03"
+      ]
+    }
+  ],
+  "motionEvidence": "Heer and Robertson's 2007 experiments found benefits for carefully designed transitions on studied tracking and change-estimation tasks. Robertson and colleagues' 2008 trend study found static traces and small multiples faster for analysis, with small multiples more accurate than animation. These findings concern different tasks. They support deliberate use of motion, not a universal preference for either animation or still images. Rosling is a central precedent for guided explanation; this is a different task from independently discovering patterns. Gapminder’s income distributions also remind us to inspect variation within groups.",
+  "cleaner": "Cleanliness should mean lower effort to understand a relationship and operate the tool. It can come from consistent mappings, precise typography, disciplined layers, direct actions and visible state. Sparse screens, hidden controls and undifferentiated pale marks can remove useful information. Expressiveness comes from a precise visual and interaction vocabulary whose distinctions carry meaning.",
+  "people": [
+    {
+      "names": "Eduard Imhof; Cynthia Brewer; swisstopo",
+      "study": "Terrain, symbol and type hierarchy; generalization; color matched to data semantics.",
+      "question": "How can dense information remain readable at several scales?",
+      "sources": [
+        "D11",
+        "D12",
+        "D13"
+      ]
+    },
+    {
+      "names": "Bret Victor",
+      "study": "Reactive documents and explorable explanations.",
+      "question": "Can a reader vary an assumption and immediately examine its consequences?",
+      "sources": [
+        "D03"
+      ]
+    },
+    {
+      "names": "Ben Shneiderman; Christopher Ahlberg",
+      "study": "Dynamic queries, starfield displays and direct visual exploration.",
+      "question": "How do filters become a continuous analytical conversation?",
+      "sources": [
+        "D06"
+      ]
+    },
+    {
+      "names": "Hans Rosling and the Gapminder team",
+      "study": "Guided multivariate explanation, change over time and distributions behind averages.",
+      "question": "What misconception should change, and what evidence will let readers verify the new understanding?",
+      "sources": [
+        "D18",
+        "D19"
+      ]
+    },
+    {
+      "names": "Jeffrey Heer; George Robertson",
+      "study": "Interactive visual analysis, object constancy and staged transitions.",
+      "question": "Which visual changes should be animated, and what must persist?",
+      "sources": [
+        "D14",
+        "D15",
+        "D16"
+      ]
+    },
+    {
+      "names": "Tamara Munzner",
+      "study": "Separate domain task, data/task abstraction, encoding/interaction and algorithm.",
+      "question": "Are we solving the right problem, and how should each layer be validated?",
+      "sources": [
+        "D05"
+      ]
+    },
+    {
+      "names": "Fernanda Viégas; Martin Wattenberg; Ian Johnson",
+      "study": "Explorable explanations of projection behavior and misleading visual structure.",
+      "question": "Which apparent patterns survive scrutiny of the method?",
+      "sources": [
+        "D07"
+      ]
+    },
+    {
+      "names": "Moritz Stefaner; Nadieh Bremer",
+      "study": "Bespoke forms with explicit data relationships and meaningful interactions.",
+      "question": "How can a distinct visual identity make structure and exploration memorable?",
+      "sources": [
+        "D08",
+        "D09"
+      ]
+    },
+    {
+      "names": "Douglas Engelbart",
+      "study": "Augmentation as a system of people, artifacts, language, methods and learning.",
+      "question": "What enables a person or team to reason beyond the capability of an isolated chart?",
+      "sources": [
+        "D17"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "name": "Cartographic generalization",
+      "image": "https://prod-swisstopoch-hcms-sdweb.imgix.net/dam/en/sd-web/4qgqb8Knxvbc/Generalisieren-EN.png?auto=format",
+      "alt": "swisstopo comparison showing the same territory represented with different amounts of detail at different map scales.",
+      "lesson": "Study how selected detail and symbols change with scale while the territory remains identifiable.",
+      "sources": [
+        "D11"
+      ]
+    },
+    {
+      "name": "OECD Better Life Index",
+      "image": "https://truth-and-beauty.net/_app/immutable/assets/_mixer.B0ZbeP_8.jpeg",
+      "alt": "Moritz Stefaner's Better Life Index: topic weighting controls beside country glyphs.",
+      "lesson": "Study the connection among eleven topics, user weights, an expressive glyph and a changing ranking. Test a precise comparison view alongside the metaphor.",
+      "sources": [
+        "D08"
+      ]
+    },
+    {
+      "name": "Royal Constellations",
+      "image": "https://www.visualcinnamon.com/img/portfolio/2016/royal-constellations/royal_constellations_detail_3.jpg",
+      "alt": "Nadieh Bremer's Royal Constellations highlighting a shortest path through a family network.",
+      "lesson": "The network responds to a relationship question: inspect a person's neighborhood or a path between two people. The overview and focused explanation have distinct jobs.",
+      "sources": [
+        "D09"
+      ]
+    }
+  ],
+  "experiments": [
+    {
+      "title": "A map-like analytical field",
+      "build": "Use one dataset with several attributes. Make a coherent overview, then move through aggregates, distributions, records and evidence with stable selection and useful labels.",
+      "test": "Can readers find both a population-level pattern and an exact local fact without losing orientation? Compare against an equivalent static dense view."
+    },
+    {
+      "title": "A multidimensional workbench",
+      "build": "Reuse the same data. Link a scatterplot, an attribute matrix and distributions through one selection. Keep raw variables beside any projection; support named cohorts and saved states.",
+      "test": "Can readers identify and explain a cohort using the original attributes? Record errors caused by changing scope, normalization or projection."
+    },
+    {
+      "title": "A motion comparison",
+      "build": "Reuse one change task in three modes: immediate transition, carefully animated transition, and persistent before/after or small multiples. Add a separate scrubbed-time condition only when time is the measured variable.",
+      "test": "Measure task accuracy, completion time and identity tracking. Record reader preference separately. Adopt motion where it earns its cost."
+    }
+  ],
+  "roadmap": "Proceed from cartographic hierarchy to direct manipulation, then coordinated multidimensional exploration, then motion and uncertainty. Keep one reference dataset across the first three experiments so added capability can be compared fairly. Extend the codex with observed results, failed approaches and reusable behavioral rules as well as visual specimens. Apply the above-fold Astro contract to every prototype and include a Rosling-inspired guided explanation alongside independent analysis.",
+  "repository": "The supplied repository has thinker profiles, principles, schools and learning paths. This study connects those entries to reproducible design experiments and task-specific evidence. The research and initial experiments are published on the codex/digital-analytical-workshop branch for review in pull request #1.",
+  "constraints": {
+    "intent": "Constraints are part of the design brief and an opportunity to discover stronger forms. Preserve content and analytical integrity while reducing the space consumed by framing and controls.",
+    "host": "An Astro page in the user’s existing devshare. The precise host project and URL must be verified; a local fixture is not evidence of a completed devshare deployment.",
+    "viewports": [
+      "1280 × 800 desktop",
+      "1366 × 768 laptop",
+      "390 × 844 narrow screen"
+    ],
+    "rules": [
+      "One artifact is visible at a time. The primary graphic, essential controls, units, scope, reference, legend and selected-state facts fit together above the fold.",
+      "Reserve space for the actual Astro host header and page padding. Maintain a comfortable lower margin rather than touching the viewport edge.",
+      "No internal vertical scrolling and no page-level horizontal overflow in the analytical artifact. Longer research prose may live outside it.",
+      "Use at least 14px interface text and 12px chart labels at the actual display size. Do not shrink the whole design to force a fit.",
+      "Use at most two coordinated analytic views on desktop. On narrow screens, switch views while retaining the same selection and scope.",
+      "Motion is opt-in, pausable, replayable and respects reduced motion. Essential comparison remains available as a static view.",
+      "Synthetic observations, interpolation, sampling, aggregation and normalization are labeled. Keep exact raw measurements and cohort counts available.",
+      "Every experiment has a documented reading task, a static or simpler comparison, and a record of observed failures. Viewport checks establish fit, not comprehension."
+    ]
+  },
+  "implementation": {
+    "status": "Initial Field, Dimensions and Motion prototypes are implemented. Analytical tests and above-fold checks passed in an Astro fixture. Task-based reader evaluation and deployment to the actual devshare remain open.",
+    "route": "/dataviz/experiments/",
+    "repositoryGuide": "workshop/experiments/README.md"
+  }
+}

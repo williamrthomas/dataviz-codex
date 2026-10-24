@@ -1,0 +1,9 @@
+node_modules/
+.astro/
+dist/
+dist-prefix/
+output/
+.DS_Store
+workshop/astro-fixture/public/codex-experiments/
+workshop/astro-fixture/public/codex-reference/
+workshop/astro-fixture/src/components/CodexExperiments.astro

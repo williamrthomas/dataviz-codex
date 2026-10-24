@@ -60,6 +60,14 @@ Rosling proved that a single, passionate communicator armed with good data and g
 
 ## Further Reading
 
+### Connection to digital analytical practice
+
+The [Digital Analytical Instruments study](../../curriculum/digital-practice.md) uses Rosling as a precedent for guided explanation alongside independent exploration. A specific question, selected trajectories, deliberate pacing and pauses can give motion a clear explanatory role. These are proposed design applications, not universal findings about animation.
+
+Gapminder's [200 years that changed the world](https://www.gapminder.org/videos/200-years-that-changed-the-world/) connects lifespan and income over time. Its [Income Mountains](https://www.gapminder.org/fw/income-mountains/) make within-country income variation explicit. These primary examples support studying both temporal change and distributions, with appropriate credit to the wider Gapminder team.
+
+See the workshop's [artifact constraints](../../workshop/constraints.md) for the compact Astro experiments and their evaluation boundaries.
+
 - Rosling, Hans (with Ola Rosling and Anna Rosling Ronnlund). *Factfulness: Ten Reasons We're Wrong About the World -- and Why Things Are Better Than You Think* (2018)
 - Gapminder Foundation: [gapminder.org](https://www.gapminder.org/)
 - "The Best Stats You've Ever Seen" (TED Talk, 2006): available on TED.com

@@ -1,0 +1,87 @@
+{
+  "checked": "2026-10-24",
+  "host": "Isolated Astro fixture, production build, /devshare/ base",
+  "checks": [
+    {
+      "bottom": 720,
+      "margin": 80,
+      "minControlFont": 14,
+      "mode": "cdx-shell cdx-field",
+      "overflowX": 0,
+      "overflowY": 0,
+      "viewport": "1280x800"
+    },
+    {
+      "bottom": 720,
+      "margin": 80,
+      "minControlFont": 14,
+      "mode": "cdx-shell cdx-dimensions",
+      "overflowX": 0,
+      "overflowY": 0,
+      "viewport": "1280x800"
+    },
+    {
+      "bottom": 720,
+      "margin": 80,
+      "minControlFont": 14,
+      "mode": "cdx-shell cdx-motion",
+      "overflowX": 0,
+      "overflowY": 0,
+      "viewport": "1280x800"
+    },
+    {
+      "bottom": 712,
+      "margin": 56,
+      "minControlFont": 14,
+      "mode": "cdx-shell cdx-field",
+      "overflowX": 0,
+      "overflowY": 0,
+      "viewport": "1366x768"
+    },
+    {
+      "bottom": 712,
+      "margin": 56,
+      "minControlFont": 14,
+      "mode": "cdx-shell cdx-dimensions",
+      "overflowX": 0,
+      "overflowY": 0,
+      "viewport": "1366x768"
+    },
+    {
+      "bottom": 712,
+      "margin": 56,
+      "minControlFont": 14,
+      "mode": "cdx-shell cdx-motion",
+      "overflowX": 0,
+      "overflowY": 0,
+      "viewport": "1366x768"
+    },
+    {
+      "bottom": 784,
+      "margin": 60,
+      "minControlFont": 14,
+      "mode": "cdx-shell cdx-field",
+      "overflowX": 0,
+      "overflowY": 0,
+      "viewport": "390x844"
+    },
+    {
+      "bottom": 784,
+      "margin": 60,
+      "minControlFont": 14,
+      "mode": "cdx-shell cdx-dimensions",
+      "overflowX": 0,
+      "overflowY": 0,
+      "viewport": "390x844"
+    },
+    {
+      "bottom": 784,
+      "margin": 60,
+      "minControlFont": 14,
+      "mode": "cdx-shell cdx-motion",
+      "overflowX": 0,
+      "overflowY": 0,
+      "viewport": "390x844"
+    }
+  ]
+}
