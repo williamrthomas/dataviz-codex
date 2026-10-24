@@ -9,6 +9,10 @@ Four learning paths tailored to different backgrounds and goals. Each path provi
 - [Designer](designer.md) — For visual designers entering the data visualization field.
 - [Advanced](advanced.md) — Deep theory, research papers, and frontier topics.
 
+## Focused Studies
+
+- [Digital Analytical Instruments](digital-practice.md) — Extend Tufte through cartographic hierarchy, Rams and Ive, direct manipulation, coordinated multidimensional views, and purposeful motion. Includes primary sources, interpretation boundaries, and three proposed design experiments. Complements the Designer and Advanced paths.
+
 ## How to Use These Paths
 
 **Start with Foundations.** Regardless of your background, the Foundations path covers the essential books, principles, case studies, and thinkers that form the shared vocabulary of the field. It takes approximately 4-6 weeks of focused reading.
