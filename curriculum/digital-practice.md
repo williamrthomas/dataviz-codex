@@ -6,7 +6,7 @@ A proposed synthesis extending the Tufte study. Statements about what Rams or Iv
 
 This focused study extends the [Designer path](designer.md) and [Advanced path](advanced.md). It connects [analytical design](../principles/analytical-design.md), [layering and separation](../principles/layering-and-separation.md), [micro/macro readings](../principles/micro-macro-readings.md), and [interaction design](../principles/interaction-design.md).
 
-## Four complementary design lenses
+## Complementary design lenses
 
 ### Tufte
 
@@ -172,7 +172,7 @@ Figures are attributed to the linked source and load from the original host. Thi
 
 ## Three comparable experiments
 
-**Status:** Proposed work. No implementation or reader study is claimed.
+**Status:** Initial Field, Dimensions and Motion prototypes are implemented. Analytical tests and above-fold checks passed in an Astro fixture. Task-based reader evaluation and deployment to the actual devshare remain open. See the [experiment guide](../workshop/experiments/README.md).
 
 ### 1. A map-like analytical field
 

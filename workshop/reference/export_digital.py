@@ -27,7 +27,7 @@ def table(headers, rows):
 parts = [f"# {d['title']}",
          f"**Working proposition:** {d['thesis']}", d['scope'],
          'This focused study extends the [Designer path](designer.md) and [Advanced path](advanced.md). It connects [analytical design](../principles/analytical-design.md), [layering and separation](../principles/layering-and-separation.md), [micro/macro readings](../principles/micro-macro-readings.md), and [interaction design](../principles/interaction-design.md).',
-         '## Four complementary design lenses']
+         '## Complementary design lenses']
 for x in d['lenses']:
     parts += [f"### {x['name']}", f"**Documented:** {x['source']} {refs(x['sources'])}", x['extension']]
 parts += ['## Cartography as the organizing model',
@@ -57,7 +57,7 @@ for x in d['precedents']:
     parts += [f"### {x['name']}", f"![{x['alt']}]({x['image']})", x['lesson'] + ' ' + refs(x['sources'])]
 parts += ['Figures are attributed to the linked source and load from the original host. Third-party figure rights are not changed by the repository license.',
           '## Three comparable experiments',
-          '**Status:** Proposed work. No implementation or reader study is claimed.']
+          '**Status:** ' + d.get('implementation', {}).get('status', 'Proposed work. No implementation or reader study is claimed.') + ' See the [experiment guide](../workshop/experiments/README.md).']
 for i, x in enumerate(d['experiments'], 1):
     parts += [f"### {i}. {x['title']}", '**Build:** ' + x['build'], '**Test:** ' + x['test']]
 parts += [d['roadmap'],

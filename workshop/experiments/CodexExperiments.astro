@@ -1,0 +1,12 @@
+---
+/** DataViz Codex: portable custom element; retain the host's Astro version. */
+const { hostOffset = 128 } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+const assets = `${base}/codex-experiments`;
+const reference = `${base}/codex-reference/index.html`;
+---
+
+<link rel="stylesheet" href={`${assets}/lab.css?v=1`} />
+<codex-experiments data-host-offset={hostOffset} data-reference={reference}></codex-experiments>
+<noscript>JavaScript is required to explore the synthetic dataset. The reference atlas and source definitions remain available separately.</noscript>
+<script is:inline type="module" src={`${assets}/lab.js?v=1`}></script>

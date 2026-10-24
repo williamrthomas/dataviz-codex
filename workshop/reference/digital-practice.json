@@ -336,7 +336,7 @@
     }
   ],
   "roadmap": "Proceed from cartographic hierarchy to direct manipulation, then coordinated multidimensional exploration, then motion and uncertainty. Keep one reference dataset across the first three experiments so added capability can be compared fairly. Extend the codex with observed results, failed approaches and reusable behavioral rules as well as visual specimens. Apply the above-fold Astro contract to every prototype and include a Rosling-inspired guided explanation alongside independent analysis.",
-  "repository": "The supplied repository already has thinker profiles, principles, schools and learning paths. The next layer should connect those entries to reproducible design experiments and task-specific evidence. This chapter is also exported as a focused curriculum extension for that repository; no remote publication is implied.",
+  "repository": "The supplied repository has thinker profiles, principles, schools and learning paths. This study connects those entries to reproducible design experiments and task-specific evidence. The research and initial experiments are published on the codex/digital-analytical-workshop branch for review in pull request #1.",
   "constraints": {
     "intent": "Constraints are part of the design brief and an opportunity to discover stronger forms. Preserve content and analytical integrity while reducing the space consumed by framing and controls.",
     "host": "An Astro page in the user’s existing devshare. The precise host project and URL must be verified; a local fixture is not evidence of a completed devshare deployment.",
@@ -355,5 +355,10 @@
       "Synthetic observations, interpolation, sampling, aggregation and normalization are labeled. Keep exact raw measurements and cohort counts available.",
       "Every experiment has a documented reading task, a static or simpler comparison, and a record of observed failures. Viewport checks establish fit, not comprehension."
     ]
+  },
+  "implementation": {
+    "status": "Initial Field, Dimensions and Motion prototypes are implemented. Analytical tests and above-fold checks passed in an Astro fixture. Task-based reader evaluation and deployment to the actual devshare remain open.",
+    "route": "/dataviz/experiments/",
+    "repositoryGuide": "workshop/experiments/README.md"
   }
 }

@@ -8,7 +8,7 @@ Verify at 1280 × 800, 1366 × 768 and 390 × 844 CSS pixels at 100% browser zoo
 
 Each artifact must show its primary graphic, essential controls, units, scope, reference, legend and selected-state facts above the fold. One artifact is visible at a time. There must be no internal vertical scrolling, clipped content or page-level horizontal overflow in the artifact.
 
-Use at least 14px interface text and 12px chart labels at the rendered size. Preserve usable control targets. Reduce framing, repetition and simultaneous views before reducing legibility. Desktop may show two coordinated analytic views; narrow layouts switch between them while preserving the same data state.
+Use at least 14px text for interface controls and their labels, and 12px for chart and contextual labels at the rendered size. Preserve usable control targets. Reduce framing, repetition and simultaneous views before reducing legibility. Desktop may show two coordinated analytic views; narrow layouts switch between them while preserving the same data state.
 
 Long research prose and optional methodological reading can live outside the artifact. Essential interpretation cannot depend on opening that prose.
 

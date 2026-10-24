@@ -1,0 +1,25 @@
+---
+import CodexExperiments from '../../components/CodexExperiments.astro';
+const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DataViz Codex — Compact experiments</title>
+  </head>
+  <body>
+    <header class="host-header"><h1>DataViz Codex <span>/ Experiments</span></h1><a href={`${base}/codex-reference/index.html#digital`}>Research atlas ↗</a></header>
+    <main><CodexExperiments hostOffset={128} /></main>
+  </body>
+</html>
+
+<style is:global>
+  html,body{margin:0;background:#efeee6;color:#25291f;font-family:system-ui,sans-serif}
+  .host-header{height:56px;max-width:1248px;padding:0 24px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .host-header h1{font-size:14px;font-weight:600;margin:0}.host-header h1 span{font-weight:400;color:#62665b}.host-header a{font-size:12px;color:inherit;text-underline-offset:3px}
+  main{max-width:1248px;margin:auto;padding:16px 24px 24px;box-sizing:border-box}
+  @media(max-width:720px){.host-header{padding:0 12px}.host-header h1 span{display:none}main{padding:12px}}
+</style>

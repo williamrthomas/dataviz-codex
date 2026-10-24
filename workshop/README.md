@@ -5,6 +5,7 @@ This workshop connects the codex's intellectual references to inspectable artifa
 - [Reference atlas](reference/index.html): the Tufte specimens and digital extension, including cartographic practice, Rams, Ive, Rosling, multidimensional exploration and motion. Open locally in a browser; original figures require internet access.
 - [Digital analytical instruments](../curriculum/digital-practice.md): the sourced study and proposed experiments.
 - [Artifact constraints](constraints.md): the above-fold design and verification contract for an Astro devshare.
+- [Compact experiments](experiments/README.md): working Field, Dimensions and Motion prototypes using one synthetic dataset, with an Astro fixture and host integration component.
 
 Rebuild the reference atlas with Python's standard library:
 
